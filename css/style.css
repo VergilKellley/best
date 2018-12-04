@@ -26,6 +26,7 @@ html, body{
 
 .container-fluid{
 	padding: 0;
+	overflow: hidden;
 }
 
 /**************header**************/
@@ -38,8 +39,19 @@ html, body{
 
 .logo p{
 	display: inline-block;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	margin-top: auto;
+}
+
+.habla {
+	position: absolute;
+	top: 60%;
+	left: 54%;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-style: italic;
+	color: var(--banner-red);
+	
 }
 
 /******navagation menu*************/
@@ -51,7 +63,6 @@ nav{
 }
 nav li{
     display:inline;
-    /*padding: 10px;*/
     margin-top: auto;
 }
 nav a{
@@ -71,28 +82,35 @@ nav a:hover{
 	color: var(--banner-red);
 }
 
+.container-fluid {
+	overflow: hidden !important;
+	padding: 0px;
+}
 .img-container{
 	position: relative;
 	width: 100vw;
+	height: 525px;
 	top: 100px;
+	overflow: hidden !important;
 }
 
 section img{
-	position: absolute;
+	position: relative;
 	z-index: 2;
-	top: 0;
-	left: -15px;
+	top: -50px;
 	width:100vw;
-	height: 100vh;
+	height: 90%;
+	overflow: hidden !important;
 }
 
 #overlay{
-	position: relative;
-	left: -15px;
+	position: absolute;
+	top: 0px;
 	z-index: 3;
-	height:100vh;
+	height:100%;
 	width: 100vw;
 	background: rgba(0, 0, 0, 0.8);
+	overflow: hidden !important;
 }
 
 #fists-text {
@@ -110,7 +128,7 @@ section img{
 #quote-button {
 	position: absolute;
 	z-index: 4;
-	top: 60%;
+	top: 45%;
 	left: 43%;
 	font-size: 2rem;
 	background-color: var(--banner-red);
@@ -125,40 +143,93 @@ section img{
 }
 
 .second-section{
-	position: relative;
-	top: 100px;
-	height: 1300px;
-	background: var(--banner-bg-color);
+	position: absolute;
+	top:618px;
+	height: 2300px;
+	background: #fff; /*var(--banner-bg-color);*/
 }
 
-.white-bg{
-	position: relative;
-	top: 200px;
-	margin: auto;
-	padding-bottom: 200px;
-	height: 360px;
+.text-box{
+	position:relative;
+	margin:100px auto;
+	height: 340px;
 	width: 80%;
 	border-radius: 20px;
-	background: #fff;
+	border: rgb(11, 0, 99) 2px solid;
+	box-shadow: 5px 10px;
+	background: var(--banner-bg-color); /*#fff;*/
+}
+
+.second-section span{
+	color: var(--banner-red);;
 }
 
 .second-section p {
 	position: relative;
 	display: inline-block;
-	padding-top: 40px;
-	color: #9fa1a3;
+	padding-top: 20px;
+	color: #fff;/*#9fa1a3;*/
 	font-size: 1.5rem;
 }
 
+#small-quote-button {
+	background: var(--banner-red);
+	color: #fff;
+	padding: 5px;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.img-box {
+	position: relative;
+	margin: 40px auto;
+}
 .second-section img{
 	position: relative;
 	display: inline-block;
 	padding-top: 40px;
 	height: 300px;
 	width: 300px;
-	margin-left: 75px;
+	margin-left: 0 auto;
 }
 
+.footer-text-container {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background: rgb(11, 0, 99);
+	color: #fff;
+	line-height: 3px;
+}
+
+.footer-text p {
+	font-size: 16px;
+	display: block;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.footer-text a{
+	display: block;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+footer {
+	position: relative;
+	z-index: 33;
+	width: 100%;
+	height: 130px;
+	text-align: center;
+	bottom: 0;
+	background: rgb(11, 0, 99);
+	color: #000;
+}
+
+footer a{
+	position: relative;
+	top: 20px;
+}
 
 /*************INDEX/LANDING PAGE*********************/
 
